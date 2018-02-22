@@ -10,4 +10,8 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
+	$(".likeBtn").click(function () {
+		ga("create", 'UA-114601752-1', 'auto');
+		ga("send", "event", 'like', 'click');
+	});
 }
